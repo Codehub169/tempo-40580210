@@ -183,7 +183,7 @@ a:hover {
     width: 150px; /* Adjust size as needed */
     height: auto;
     margin-bottom: 1.5rem;
-    opacity: 0.6;
+    opacity: 0.9; /* Increased opacity for better visibility of the pink image */
 }
 
 .placeholder-view p {
