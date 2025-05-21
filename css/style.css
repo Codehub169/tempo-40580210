@@ -15,7 +15,7 @@ body {
 }
 
 a {
-    color: #007bff;
+    color: #C2185B; /* Darker Pink for better contrast - CHANGED */
     text-decoration: none;
 }
 
@@ -25,7 +25,7 @@ a:hover {
 
 /* Header Styling */
 .app-header {
-    background-color: #007bff; /* Primary blue */
+    background-color: #E91E63; /* Pink */
     color: white;
     padding: 1rem 1.5rem;
     text-align: left;
@@ -82,18 +82,18 @@ a:hover {
     border-radius: 6px;
     margin-bottom: 0.75rem;
     cursor: pointer;
-    transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.3s ease-in-out;
     background-color: #fff;
 }
 
 .note-item:hover {
     background-color: #f8f9fa;
-    border-color: #007bff;
+    border-color: #E91E63; /* Pink */
 }
 
 .note-item.active {
-    background-color: #e6f2ff; /* Light blue for active note */
-    border-left: 4px solid #007bff;
+    background-color: #F8BBD0; /* Light pink */
+    border-left: 4px solid #E91E63; /* Pink */
     padding-left: calc(1rem - 4px); /* Adjust padding for border */
 }
 
@@ -101,10 +101,15 @@ a:hover {
     font-size: 1.1rem;
     font-weight: 500;
     margin: 0 0 0.25rem 0;
-    color: #0056b3;
+    color: #C2185B; /* Darker pink */
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+/* ADDED: Specific text colors for active note item for accessibility */
+.note-item.active .note-item-title {
+    color: #880E4F; /* Material Design Pink 900 for high contrast */
 }
 
 .note-item-preview {
@@ -121,6 +126,12 @@ a:hover {
     font-size: 0.75rem;
     color: #777;
     display: block;
+}
+
+/* ADDED: Specific text colors for active note item for accessibility */
+.note-item.active .note-item-preview,
+.note-item.active .note-item-date {
+    color: #404040; /* Dark Gray for high contrast */
 }
 
 /* Main Content Area (Editor/Placeholder) */
@@ -183,7 +194,7 @@ a:hover {
     width: 150px; /* Adjust size as needed */
     height: auto;
     margin-bottom: 1.5rem;
-    opacity: 0.9; /* Increased opacity for better visibility of the pink image */
+    opacity: 0.9;
 }
 
 .placeholder-view p {
@@ -212,14 +223,14 @@ a:hover {
 }
 
 .btn-primary {
-    background-color: #007bff;
+    background-color: #C2185B; /* Darker Pink for better contrast - CHANGED */
     color: white;
-    border-color: #007bff;
+    border-color: #C2185B; /* Darker Pink for better contrast - CHANGED */
 }
 
 .btn-primary:hover {
-    background-color: #0056b3;
-    border-color: #0056b3;
+    background-color: #AD1457; /* Even Darker Pink (Material Pink 800) - CHANGED */
+    border-color: #AD1457; /* Even Darker Pink (Material Pink 800) - CHANGED */
 }
 
 .btn-success {
