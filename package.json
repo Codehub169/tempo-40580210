@@ -1,0 +1,18 @@
+{
+  "name": "simple-notes-app",
+  "version": "1.0.0",
+  "description": "A simple web application for managing notes using HTML, CSS, and JavaScript.",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 9000 || python -m http.server 9000"
+  },
+  "keywords": [
+    "notes",
+    "javascript",
+    "html",
+    "css",
+    "localstorage"
+  ],
+  "author": "",
+  "license": "ISC"
+}
